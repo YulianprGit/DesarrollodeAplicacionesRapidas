@@ -1,0 +1,59 @@
+/* Header styles*/
+.my-main-menu {
+    width: 80%;
+    margin: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(100, 0, 100, 0.7);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .site-title {
+        display: inline-flex;
+        color: white;
+    }
+}
+
+.custom-logo {
+    max-width: 3.5rem;
+}
+
+.my-navbar {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    li {
+        list-style: none;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.my-navbar .my-navbar li .slicknav_menu {
+    display: none;
+}
+
+@media screen and (max-width: 40em) {
+
+    /* #menu is the original menu */
+    .my-main-menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+        z-index: 1;
+    }
+}
